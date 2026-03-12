@@ -4,6 +4,7 @@ from django.views import View
 from django.shortcuts import render
 from django.http import JsonResponse
 from django.contrib.gis.geos import Point
+from django.views.generic import TemplateView
 
 from mapapp.models import ClickLocation
 
@@ -27,8 +28,7 @@ class PointsView(View):
         return JsonResponse({'status': 'ok'})
 
 
-class MapView(View):
-    def get(self, request):
-        return render(request, 'mapapp/map.html')
+class MapView(TemplateView):
+    template_name = 'mapapp/map.html'
 
 

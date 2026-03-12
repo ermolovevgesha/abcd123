@@ -10,7 +10,7 @@ A Django-based web application that displays an interactive map using Leaflet.js
 # Installation
 Clone this repository to your local machine:
 ```bash
-git clone https://github.com/ermolovevgesha/
+git clone https://github.com/ermolovevgesha/abcd123
 
 ```
 

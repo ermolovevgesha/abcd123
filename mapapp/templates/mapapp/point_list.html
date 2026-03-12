@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Saved points</title>
+    <link rel="stylesheet" href="{% static 'mapapp/css/point_list.css' %}">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Coordinates (Longitude, Latitude)</th>
+                <th>Created at</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for loc in locations %}
+            <tr>
+                <td>{{ loc.id }}</td>
+                <td>{{ loc.point.x }}, {{ loc.point.y }}</td>
+                <td>{{ loc.created_at }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
+

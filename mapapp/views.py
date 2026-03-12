@@ -27,6 +27,8 @@ class PointsView(View):
         return JsonResponse({'status': 'ok'})
 
 
-
+class MapView(View):
+    def get(self, request):
+        return render(request, 'mapapp/map.html')
 
 

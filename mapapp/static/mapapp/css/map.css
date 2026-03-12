@@ -1,0 +1,11 @@
+a {
+    color: #0f7afc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    color: #cf0000;
+}
+#map { height: 80vh; }
+#header { text-align: center; }
+
